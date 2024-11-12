@@ -1,0 +1,47 @@
+npm install -g npm
+npm -v
+
+npm install --global yarn
+yarn -v
+
+C:\dev\my_repo\backend>yarn
+
+
+C:\dev>mkdir my_repo
+
+C:\dev\my_repo>git init
+C:\dev\my_repo>mkdir backend
+C:\dev\my_repo\backend>npm install @keystone-6/core
+C:\dev\my_repo\backend>npm install typescript
+                       npx keystone prisma migrate dev --name init
+                       npx keystone dev
+Browse
+http://localhost:3000/
+http://localhost:3000/api/graphql
+
+
+
+
+✨ Starting Keystone
+⭐️ Server listening on :3000 (http://localhost:3000/)
+⭐️ GraphQL API available at /api/graphql
+✨ Generating GraphQL and Prisma schemas
+Error:
+You don't have any models defined in your schema.prisma, so nothing will be generated.
+You can define a model like this:
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+}
+
+
+More information in our documentation:
+https://pris.ly/d/prisma-schema
+
+
+------------------------------------------------------------------------------------------------
+
+https://www.mongodb.com/try/download/community
+C:\dev\my_repo\backend>npx keystone start
