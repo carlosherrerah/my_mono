@@ -37,7 +37,7 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
-  - stage: Deploy
+- stage: Deploy
   displayName: Deploy to Azure Web App
   dependsOn: Build
   jobs:
