@@ -8,6 +8,11 @@ trigger:
 resources:
 - repo: self
 
+pool:
+  name: 'Default'
+  demands:
+  - agent.name -equals DESKTOP-VJEDPLU
+
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '8d6ea925-4aaf-4079-a23c-33932dbb6d72'
