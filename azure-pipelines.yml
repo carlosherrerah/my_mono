@@ -53,4 +53,4 @@ stages:
         azureSubscription: 'Azure subscription 1(d033562f-3857-4a78-b782-51397916d07c)'
         appName: 'jcBackend'
         containers: 'containerbackend.azurecr.io/carlosherrerahmymono:latest'
-        appSettings: '-Port 3000'
+#        appSettings: '-Port 3000'
