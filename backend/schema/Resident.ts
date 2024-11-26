@@ -1,7 +1,10 @@
+
 import { allowAll } from '@keystone-6/core/access';
+import { list } from '@keystone-6/core';
 import { text } from '@keystone-6/core/fields';
 
-export const resident = {
+
+export const resident = list({ 
   access: allowAll,
   fields: {
     name: text({ validation: { isRequired: true } }),
@@ -9,4 +12,6 @@ export const resident = {
     street: text({ validation: { isRequired: true } }),
     number: text({ validation: { isRequired: true } }),
   },
-};
+});
+
+

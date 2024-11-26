@@ -17,6 +17,6 @@ COPY . .
 EXPOSE 3000
 
 # Comando para compilar y correr la aplicación
-RUN yarn build
+RUN yarn keystone build
 
 CMD ["yarn", "start"]
